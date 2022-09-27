@@ -1,0 +1,18 @@
+label{
+    color: darkblue;
+}
+
+button {  
+    padding: 5px 15px;
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.cardimg{
+    height: 150px;
+    width: 255px;
+  }

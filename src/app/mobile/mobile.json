@@ -1,0 +1,45 @@
+[
+    {
+        "pid":1,
+        "pname":"Samsung",
+        "pdescription":"Octa-core Processor, 108MP High Resolution Camera FHD+ 120Hz Display 6GB RAM",
+        "price":21999,
+        "img":"https://images.samsung.com/is/image/samsung/p6pim/in/sm-m536bzgeinu/gallery/in-galaxy-m53-5g-sm-m536-sm-m536bzgeinu-532184026?$730_584_PNG$"
+    },
+    {
+        "pid":2,
+        "pname":"iphone",
+        "pdescription":"Apple iPhone 14 Pro Max 256GB, Deep Purple, Processor: A16 Bionic Chip, Hexa Core",
+        "price":148999,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703416/Croma%20Assets/Communication/Mobiles/Images/261991_hhfa33.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":3,
+        "pname":"Realme",
+        "pdescription":"realme 9 Pro 5G (8GB RAM, 128GB, Midnight Black) Display: 6.6 inches, LCD",
+        "price":18890,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662440725/Croma%20Assets/Communication/Mobiles/Images/248830_njqdsp.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":4,
+        "pname":"Redmi",
+        "pdescription":"Redmi Note 11T 5G (8GB RAM, 128GB, Matte Black) Battery: 5000 mAh",
+        "price":27890,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445519/Croma%20Assets/Communication/Mobiles/Images/246254_di4wqh.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":5,
+        "pname":"Infinix",
+        "pdescription":"6 GB RAM | 64 GB ROM | Expandable Upto 2 TB 17.02 cm (6.7 inch) ",
+        "price":15000,
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfseuZNUcC7QVCFcElGCodNlrHXsBB-vScTw&usqp=CAU"
+    },
+    {
+        "pid":6,
+        "pname":"One Plus",
+        "pdescription":"OnePlus 10T 5G (12GB RAM, 256GB, Jade Green) Camera: 50MP + 8MP + 2MP Triple Rear",
+        "price":54999,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1659548049/Croma%20Assets/Communication/Mobiles/Images/259486_wof2fa.png/mxw_2048,f_auto"
+    }
+
+]

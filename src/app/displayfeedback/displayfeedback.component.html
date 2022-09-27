@@ -1,0 +1,31 @@
+<div class="container" style="margin-top: 20px;">
+    
+    <div class="row" style="background-color: aqua; padding:5px">
+      <div class="col-sm">
+        <h5>Name</h5>
+      </div>
+      <div class="col-sm">
+        <h5>Feedback</h5>
+      </div>
+      <div class="col-sm">
+        <h5>Delete</h5>
+      </div>
+      
+    </div>
+
+
+    
+      <div class="row"style="background-color: darkgrey;" *ngFor="let item of fb">
+        <div class="col-sm">
+            <p> {{item.name}}</p>
+        </div>
+        <div class="col-sm">
+          <p> {{item.feedback}}</p>
+        </div>
+        <div class="col-sm">
+          <button class="btn btn-danger m-3" (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <hr>
+      </div>
+   
+    </div>

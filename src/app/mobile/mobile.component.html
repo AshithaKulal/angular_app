@@ -1,0 +1,18 @@
+<marquee>Super Sale 30% Off</marquee>
+<div >
+    <div class="row">
+        <!--1st column-->
+        <div class="col col-lg-3">
+            <app-card [product]="productItem" *ngFor="let productItem of p"></app-card>
+        </div>
+
+        <!--2nd column-->
+        <div class="card col-lg-6" style="border:none;margin-top: 10px;">
+            <app-mobiledisplay></app-mobiledisplay>
+        </div>
+        <!--3rd column-->
+        <div class="col col-lg-3">
+           <app-advertisement></app-advertisement>
+        </div>
+    </div>
+</div>

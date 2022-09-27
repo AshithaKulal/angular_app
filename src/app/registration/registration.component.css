@@ -1,0 +1,45 @@
+/* form{
+    width: 500px;
+}
+.container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+} */
+
+input {
+    width: 60%;
+    margin-left: 100px;
+}
+
+label {
+    color:red;
+    margin-left: 100px;
+}
+
+form {
+    padding: 20px;
+    margin-left: 350px;
+    width: 40%;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: black;
+    /* box-shadow: 2px 3px 4px yellow; */
+}
+
+/* form:hover {
+    color: rgb(174, 155, 11);
+    background-color: darkcyan;
+    transform:scale(1.1);
+
+} */
+
+button {
+    margin-left: 200px;
+}
+
+span {
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-md-10">
+            <div class="card mt-4" style="border-radius: 30px;">
+                    <img  [src]="product.image" class="card-img-top" alt="product"/>
+                    <div class="card-body" >
+                        <h6>{{product.pid}}: {{product.pname}} 
+                            <span (click)="  showproductToggle()" [ngClass]="toggleContent()"></span>
+                        </h6>  
+                        <div [hidden]="productDetail" style="color: darkred; text-align:center">
+                            Price: <b>{{product.price | currency:'INR'}}</b>
+                            <br>
+                            <span style="color: black;">{{product.pdescription}}</span>
+                            <button type="button" class="btn btn-primary" (click)="onclick()"> View Products</button>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

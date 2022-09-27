@@ -1,0 +1,46 @@
+<app-suggestion></app-suggestion>
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-6 col-md-4" *ngFor="let product of productdetails" [ngSwitch]="product.Status">
+            <div class="card mt-3 mb-3" style="border: 1.5px solid purple;">
+                    <img  [src]="product.image" class="card-img-top" alt="product"/>
+                    <div class="card-body" *ngSwitchCase="'In Stock'" >
+                        <h5>{{product.pid}}: {{product.pname| uppercase}} </h5>
+                        <p [style.color]="'darkblue'" [style.font-size.px]="'15'" [style.background-color]="'lightpink'">
+                            {{product.pdescription}}
+                        </p>
+                        <div class="row">
+                            <div class=" col col-md-4 text-success" >
+                                <button type="button" class="btn btn-success">{{product.Status}}</button>
+                            </div>
+                            <div class="col col-md-5">
+                                <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
+                            </div>   
+                            <div class="col col-md-3">
+                                <button class="btn btn-outline-success m-1" (click)="addToCart(product)" style="width:50px;border-radius:10px;"><i class="fa-sharp fa-solid fa-cart-plus"style="font-size: 20px;"></i></button> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-body" *ngSwitchDefault>
+                        <h5>{{product.pid}}: {{product.pname| uppercase}}</h5>
+                        <p [style.color]="'darkblue'" [style.font-size.px]="'15'" [style.background-color]="'lightpink'">
+                            {{product.pdescription}}
+                        </p>
+
+                        <div class="row">
+                            <div class="col col-md-6">
+                                <button type="button" class="btn btn-danger">{{product.Status}}</button>
+                            </div>
+                              
+                            <div class="col col-md-6">
+                                <button class="btn btn-outline-warning " (click)="onClick()" >Notify Me</button> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>

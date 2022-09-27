@@ -1,0 +1,61 @@
+<div class="container">
+    <h2>Total Amount {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h2>
+    <hr>
+    <div class="row">
+      <div class="col-sm">
+        <h3>Product Image</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Product Name</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Quantity</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Price</h3>
+      </div>
+      <div class="col-sm">
+        <h3>Remove item</h3>
+      </div>
+    </div>
+    <hr>
+    <div class="container" *ngFor="let item of cart">
+      <div class="row">
+        <div class="col-sm">
+          <img src={{item.img}}>
+        </div>
+        <div class="col-sm">
+          <h3> {{item.pname}}</h3>
+        </div>
+        <div class="col-sm">
+          <h3> {{item.quantity}}</h3>
+        </div>
+        <div class="col-sm">
+          <h3> {{item.price}}</h3>
+        </div>
+        <div class="col-sm">
+          <!-- <div>{{item.totalPrice}}</div> -->
+          <button class="btn btn-danger m-3" (click)="delete(item)"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+      <hr>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-5">
+        <a class="btn btn-primary m-2" (click)="onClick()">Shop More</a>
+        
+      </div>   
+      <div class="col-lg-4">
+        <div>
+          <h5>Total: {{totalPrice(cart)|currency:'INR'}}</h5>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <a class="btn btn-dark " href="https://rzp.io/l/286TE9D" target="_blank">Pay Now</a>
+      </div>   
+    </div>
+
+  </div>

@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="#"><img [src]="logo" alt="Flipkart"> <!--Property Binding-->
+        {{title}}</a> <!-- String interpolation -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink=''><i class="fa fa-fw fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="offers" *ngIf="auth">Special Offers</a>
+          </li>
+          
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="wishlist" *ngIf="auth">Cart</a>
+          </li>   -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="auth">
+              Trending Items
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" *ngIf="auth">
+              <li><a class="dropdown-item" routerLink="dress">Dresses</a></li>
+              <li><a class="dropdown-item" routerLink="mobile">Mobile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="appliances">Home Appliances</a></li>
+            </ul>
+          </li>  -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="dress" *ngIf="auth">Dresses</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" routerLink="mobile" *ngIf="auth">Mobile</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" routerLink="appliances" *ngIf="auth">Home Appliances</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" routerLink="feedback" *ngIf="auth">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products" *ngIf="admin">Modify products</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" routerLink="viewfeedback" *ngIf="admin">View Feedback</a>
+          </li>
+        </ul>
+        
+   
+
+        
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      <form class="d-flex">
+        <button routerLink='cartitems' style="border:none;" *ngIf="auth">
+          <span class="fa fa-cart-plus" style="font-size:16px;color:red"><sup class="text-warning" style="font-size:10px;margin-left: 3px;color: blue;">{{cartCount}}</sup></span>
+        </button> &nbsp;&nbsp;&nbsp;
+        <a class="btn btn-warning" type="submit" style="border-radius:10px;color:black;" routerLink="login"
+          *ngIf="auth || admin">Logout</a>
+        
+        <a class="nav-link" routerLink="login" *ngIf="!auth && !admin" style="color:whitesmoke">Login</a>
+        <a class="nav-link" routerLink="register" *ngIf="!auth && !admin"  style="color:whitesmoke">Register</a>
+        
+      </form>
+
+      </div>
+    </div>
+  </nav>

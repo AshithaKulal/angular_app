@@ -1,0 +1,144 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "pname": "Gown",
+      "pdescription": "Royal Blue Designer gown ",
+      "price": "2599",
+      "img": "https://cdn.shopify.com/s/files/1/0637/4834/1981/products/1631882429_1628250059_1_VIVA-34082-V125-PEACHMODE.jpg?v=1654139715"
+    },
+    {
+      "id": 7,
+      "pname": "Samsung",
+      "pdescription": "Octa-core Processor, 108MP High Resolution Camera",
+      "price": "21999",
+      "img": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m536bzgeinu/gallery/in-galaxy-m53-5g-sm-m536-sm-m536bzgeinu-532184026?$730_584_PNG$"
+    },
+    {
+      "id": 8,
+      "pname": "Mixer",
+      "pdescription": "Preethi Zion MG-227 Juicer Mixer Grinder",
+      "price": "6100",
+      "img": "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/mixer-grinder-juicer/q/q/j/-original-imagfggwknqjxsyx.jpeg?q=70"
+    },
+    {
+      "id": 9,
+      "pname": "Saree",
+      "pdescription": "The Silk Beige Beautiful Banarasi Jacquard Silk Saree",
+      "price": "4999",
+      "img": "https://cdn.shopify.com/s/files/1/0524/0238/9183/products/6b8d1913-4cc1-4251-acc6-2d34d84d6196_1_800x.jpg?v=1608785497"
+    },
+    {
+      "pname": "DinnerSet",
+      "pdescription": "Opalware Tropical Lagoon Dinner Set",
+      "price": "1899",
+      "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/dinner-set/u/b/l/yes-22-lop-no-ds-rc-22-la-opala-original-imaghydvazjhsxyw.jpeg?q=70",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "pname": "Bag",
+      "pdescription": "Small 10 inch Laptop Backpack LWBKP00019MULTI",
+      "price": "1200",
+      "img": "https://rukminim1.flixcart.com/image/452/542/k6tniq80/bag/y/4/u/lwbkp00019multi-lino-perros-10-original-imafp7dfq6jkeraz.jpeg?q=50"
+    },
+    {
+      "id": 12,
+      "pname": "Toys",
+      "pdescription": "Kids creation Play Set Non Toxic Plastic Unbreakable Toys",
+      "price": "799",
+      "img": "assets/toy.jfif"
+    }
+  ],
+  "users": [
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 3
+    },
+    {
+      "username": " Asmi",
+      "useremail": "asmi@gmail.com",
+      "password": "asmi123",
+      "mobile": " 9632814233",
+      "id": 6
+    },
+    {
+      "username": " Ashitha",
+      "useremail": "ashitha@gmail.com",
+      "password": "ashitha123",
+      "mobile": "9632814233",
+      "id": 7
+    },
+    {
+      "username": "Ashithakulal",
+      "useremail": "ashitha123@gmail.com",
+      "mobile": "9632814233",
+      "password": "asdf1234",
+      "id": 8
+    },
+    {
+      "username": "AliceJain",
+      "useremail": "alice@gmail.com",
+      "mobile": "6789123456",
+      "password": "alice123",
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "pname": "Oven Toaster",
+      "pdescription": "WONDERCHEF 60-Litre Oven Toaster Griller (OTG) - 60 Litres, Stainless Steel – With Rotisserie, Auto-Shut Off, Heat-Resistant Tempered Glass",
+      "price": 11499,
+      "img": "https://rukminim1.flixcart.com/image/832/832/kxdl3m80/otg-new/8/h/a/2000-steel-wonderchef-48-original-imag9un5ztegxzrf.jpeg?q=70",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "pname": "Gown",
+      "pdescription": "Royal Blue Designer Partywear Jacquard Gown with dark pink border with golden design",
+      "price": 2500,
+      "img": "https://cdn.shopify.com/s/files/1/0637/4834/1981/products/1631882429_1628250059_1_VIVA-34082-V125-PEACHMODE.jpg?v=1654139715",
+      "quantity": 3,
+      "id": 4
+    },
+    {
+      "pname": "Skirts",
+      "pdescription": "Pink printed skirt, has a half elastic waist belt and side zip closure.",
+      "price": 999,
+      "img": "https://static.jaypore.com/tr:w-500,h-662,e-sharpen/media/catalog/product/8/0/800042497-1_2.jpg",
+      "quantity": 3,
+      "id": 5
+    },
+    {
+      "pname": "Samsung",
+      "pdescription": "Octa-core Processor, 108MP High Resolution Camera FHD+ 120Hz Display 6GB RAM",
+      "price": 21999,
+      "img": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m536bzgeinu/gallery/in-galaxy-m53-5g-sm-m536-sm-m536bzgeinu-532184026?$730_584_PNG$",
+      "quantity": 3,
+      "id": 6
+    },
+    {
+      "pname": "Mixer",
+      "pdescription": "Preethi Zion MG-227/MG227_ 750 Juicer Mixer Grinder (4 Jars, Black)",
+      "price": 6100,
+      "img": "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/mixer-grinder-juicer/q/q/j/-original-imagfggwknqjxsyx.jpeg?q=70",
+      "quantity": 2,
+      "id": 7
+    },
+    {
+      "pname": "Waching Machine",
+      "pdescription": "SAMSUNG 6 kg 5 Star With Hygiene Steam and Ceramic Heater Fully Automatic Front Load with In-built Heater Silver",
+      "price": 23490,
+      "img": "https://rukminim1.flixcart.com/image/832/832/kg6vfrk0/washing-machine-new/n/b/z/ww60r20glss-tl-samsung-original-imafwgrdhsn6hhpe.jpeg?q=70",
+      "quantity": 2,
+      "id": 8
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

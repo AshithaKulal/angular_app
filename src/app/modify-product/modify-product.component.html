@@ -1,0 +1,90 @@
+<nav class="navbar bg-secondary">
+    <div class="container-fluid ">
+      <h1 style="color: brown; font-size: 20px; ">PRODUCTS DETAILS</h1>
+        <!-- Button trigger modal -->
+        <button (click)="clickAddProduct()" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa-solid fa-plus" style="font-size: 30px;"></i>
+        </button>
+    </div>
+</nav>
+  <table class="table table-info table-striped table-hover">
+    <thead class="table-secondary">
+      <tr>
+        <th scope="col">Product ID</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Product Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productData">
+        <td>{{product.id}}</td>
+        <td>{{product.pname}}</td>
+        <td>{{product.pdescription}}</td>
+        <td>{{product.price}}</td>
+        <td>
+          <img [src]="product.img" class="prodimg">
+        </td>
+        <td>
+          <button (click)="onEdit(product)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>&nbsp;
+          <button (click)="deleteProducts(product)" class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="pname" class="form-control" formControlName="pname">
+              <label id="error" class="error ng-binding" *ngIf="submitted && f['pname'].errors?.['required']">Name is required
+              </label>
+              <label  id="error" class="error ng-binding" *ngIf="submitted && f['pname'].errors?.['minlength']">Name
+                must be at least 3 characters</label>
+                <label  id="error" class="error ng-binding" *ngIf="submitted && f['pname'].errors?.['pattern']">Alphabets only</label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Description</label>
+              <input type="pdescription" class="form-control" formControlName="pdescription">
+              <label id="error" class="error ng-binding" *ngIf="submitted && f['pdescription'].errors?.['required']">Description is required
+              </label>
+              <label  id="error" class="error ng-binding" *ngIf="submitted && f['pdescription'].errors?.['minlength']">Description
+                must be at least 10 characters</label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Price</label>
+              <input type="price" class="form-control" formControlName="price">
+              <label id="error" class="error ng-binding" *ngIf="submitted && f['price'].errors?.['required']">Price number
+                is required</label>
+                <label id="error" class="error ng-binding" *ngIf="submitted && f['price'].errors?.['pattern']">Enter Valid Price</label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Image</label>
+              <input type="img" class="form-control" formControlName="img">
+              <label id="error" class="error ng-binding" *ngIf="submitted && f['img'].errors?.['required']">Image is
+                is required</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd" (click)="postProductDetails()" class="btn btn-success">Add</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateProductDetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

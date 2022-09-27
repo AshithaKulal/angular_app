@@ -1,0 +1,13 @@
+.prodimg{
+    height:50px;
+    width:50px;
+    margin-left:20px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:10px;
+
+}
+#error{
+    color:red;
+    /* margin-left: 100px; */
+}

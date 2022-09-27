@@ -1,0 +1,29 @@
+h5{
+    /* text-align: center; */
+    color:crimson;
+       
+}
+
+.card{
+    background-color:darkgrey;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 10px;
+    transform: scaleY(1.1);
+}
+
+img{
+    height:150px;
+    width:200px;
+    margin-top: 10px;
+  
+    margin-left: 15%;
+    border-radius: 10px;
+}
+p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+

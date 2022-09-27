@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col  col-md-6" *ngFor="let mbl of mobile" >
+            <div class="card mt-5 mb-3" style="border: 1.5px solid purple;">
+                    <img  [src]="mbl.img" class="card-img-top" alt="product"/>
+                    <div class="card-body" >
+                        <h5>{{mbl.pid}}: {{mbl.pname| uppercase}} </h5>
+                        <div class="row">
+                            <div class="col col-md-7">
+                                <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
+                            </div>   
+                            <div class="col col-md-2">
+                                <button class="btn btn-outline-success m-2" (click)="addToCart(mbl)" style="width:50px;border-radius:10px;"><i class="fa-sharp fa-solid fa-cart-plus"style="font-size: 20px;"></i></button> 
+                            </div>
+                        </div>
+                            {{mbl.pdescription}}   
+                        </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 
+<div *ngFor="let mbl of mobile" style="border:none;">
+    <div class="row">
+        
+            <div class="card-body col-md-6">
+                <div class="row" style="margin-top:5px; background-color:rgb(98, 141, 143); border-style:solid;border-color:darkgreen;border-radius:10px;">
+                    <div class="col-lg-3">
+                
+                        <img [src]="mbl.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                       
+                           <b style="color: crimson;"> {{mbl.pid}}: {{mbl.pname | uppercase}}</b><br>
+            
+                          <h6 style="color:darkmagenta;">  {{mbl.price | currency:'INR'}} </h6>
+                      
+                        <hr>
+                            <span style="color:darkblue">Description: {{mbl.pdescription}}</span>
+                            <br><br>
+              
+                    </div>
+                </div>  
+        </div>
+    </div>
+</div> -->

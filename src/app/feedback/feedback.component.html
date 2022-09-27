@@ -1,0 +1,92 @@
+<!-- <div>
+<br>
+<label style="margin-left: 10px;"><b>Enter Your feddback</b></label><br>
+
+<input type="text"  [(ngModel)]="feedback" style="margin-left: 10px;"><br><br>
+<span  style="margin-left: 10px;">Your feedback: {{feedback}}</span><br><br>
+<button (click)="msg()">Submit</button>
+</div> -->
+
+<div class="row">
+    <div class="col-lg-6">
+
+        <div class="container">
+            <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 mt-4">
+            <div class="card " style="border: 2px solid rgb(44, 32, 218); " >
+              <img class="card-img-top" src="https://storiesflistgv2.blob.core.windows.net/stories/2017/08/Perfectbuy_banner.jpg" alt="Card image cap" class="cardimg">
+              <div class="card-body">
+                <p class="card-text"style="color: brown">
+                  Flipkart Perfect Buy — a one-stop experience for large appliance shopping. Grab the offer!! Hurry up</p>
+              </div>
+            </div>
+            </div>
+            
+            <div class="col-6 col-sm-6 col-md-6 mt-4">
+            <div class="card " style="border: 2px solid  rgb(44, 32, 218);;  " >
+              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQptrY-3AmjDN3S_Q-9oEzPJ9fukpqXk3Unw&usqp=CAU" alt="Card image cap"class="cardimg">
+              <div class="card-body">
+                <p class="card-text"style="color: brown">
+                  Flipkart Apple Week sale and samsung summer sale giving deals on smartphones and other products</p>
+              </div>
+            </div>
+        </div>
+           
+        <div class="col-6 col-sm-6 col-md-6 mt-4">
+            <div class="card " style="border: 2px solid  rgb(44, 32, 218);;  " >
+              <img class="card-img-top" src="https://images.fonearena.com/blog/wp-content/uploads/2016/11/flipkart-everyday-essentials_1.jpg" alt="Card image cap" class="cardimg">
+              <div class="card-body">
+                <p class="card-text" style="color: brown">
+                  Flipkart has introduced caters to daily household needs. Dubbed as Everyday Essentials of different sections</p>
+              </div>
+            </div>
+        </div>
+            
+        <div class="col-6 col-sm-6 col-md-6 mt-4">
+            <div class="card " style="border: 2px solid  rgb(44, 32, 218);;  ">
+              <img class="card-img-top" src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2020/10/21/flipkart-bbd-last-day-904976-1603257119.jpg?itok=G1B48YEP" alt="Card image cap" class="cardimg">
+              <div class="card-body">
+                <p class="card-text"style="color: brown">
+                  
+                  Flipkart Big Billion Days October 2020 sale: Top deals on Samsung, Sony, LG smart TVs and more. Hurry Up!!</p>
+              </div>
+            </div>
+        </div> 
+     </div>
+    </div>
+      
+           
+      
+    </div>   
+    <div class="col-lg-6" >
+       
+        <div class="row" style="border: 2px solid black; margin: 70px; background-color: cornsilk;">
+            <div class="col-lg-6 col-md-8 mx-auto" >
+                      <div class="login-form">
+                              <form class="mt-5" [formGroup]="FeedbackForm" (ngSubmit)="submitHandler()">
+                                  <h3 class="text-center ng-binding"> Feedback Form </h3>
+                                  <br>
+                                  <div class="mt-2">
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" name="name" formControlName="name" placeholder="User Name">
+                                      <label class="error ng-binding" *ngIf="submitted && f['name'].errors?.['required']">Name is required</label>
+                                     
+                                      
+                                  </div>
+                                  <br><br>
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" name="feedback" formControlName="feedback" placeholder="Enter your Feedback">
+                                      <label class="error ng-binding" *ngIf="submitted && f['feedback'].errors?.['required']">Feedback is required</label>
+      
+                                  </div>
+                                  <br><br>
+                                  <button type="submit" class="btn btn-warning" >Submit</button>
+                                  <br><br>
+                                 
+                                  </div>
+                              </form>
+                          </div>
+                   </div>
+               </div>
+    </div>
+</div>

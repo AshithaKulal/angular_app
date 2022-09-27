@@ -1,0 +1,45 @@
+[
+    {
+        "pid":1,
+        "pname":"Saree",
+        "pdescription":"The Silk Beige Beautiful Banarasi Jacquard Silk Saree with Rich Pallu",
+        "price":3550,
+        "img":"https://cdn.shopify.com/s/files/1/0524/0238/9183/products/6b8d1913-4cc1-4251-acc6-2d34d84d6196_1_800x.jpg?v=1608785497"
+    },
+    {
+        "pid":2,
+        "pname":"Topwear",
+        "pdescription":"Dark Pink Kurta with pink designery pant Dupatta Set Cotton material ",
+        "price":1990,
+        "img":"https://wforwoman.gumlet.io/product/21AUSP10913-117070/665/21AUSP10913-117070.jpg"
+    },
+    {
+        "pid":3,
+        "pname":"Jeans",
+        "pdescription":"Straight cut jeans with a distressed finish for a stylish accent",
+        "price":900,
+        "img":"https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448428/sub/ingoods_448428_sub6.jpg?width=1600&impolicy=quality_75"
+    },
+    {
+        "pid":4,
+        "pname":"Gown",
+        "pdescription":"Royal Blue Designer Partywear Jacquard Gown with dark pink border with golden design",
+        "price":2500,
+        "img":"https://cdn.shopify.com/s/files/1/0637/4834/1981/products/1631882429_1628250059_1_VIVA-34082-V125-PEACHMODE.jpg?v=1654139715"
+    },
+    {
+        "pid":5,
+        "pname":"Duppatta",
+        "pdescription":"Pink and Orange Festive Chanderi Dupatta with Zari work",
+        "price":200,
+        "img":"https://cdn.shopify.com/s/files/1/0870/8104/products/anokherang-dupattas-pink-and-orange-festive-chanderi-dupatta-with-zari-work-37383527956729.png?v=1656603042"
+    },
+    {
+        "pid":6,
+        "pname":"Skirts",
+        "pdescription":"Pink printed skirt, has a half elastic waist belt and side zip closure.",
+        "price":999,
+        "img":"https://static.jaypore.com/tr:w-500,h-662,e-sharpen/media/catalog/product/8/0/800042497-1_2.jpg"
+    }
+
+]

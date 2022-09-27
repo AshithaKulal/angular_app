@@ -1,0 +1,30 @@
+h5{
+    text-align: center;
+    color:crimson;
+    /* text-shadow: 2px 3px 2px darkblue; */
+    background-color: cornflowerblue;
+}
+
+.card{
+    background-color: floralwhite;
+}
+
+.card:hover{
+    background-color:darkseagreen;
+    transform: scaleY(1.1);
+}
+
+img{
+    height:150px;
+    width:200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+

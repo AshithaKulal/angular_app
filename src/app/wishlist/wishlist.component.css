@@ -1,0 +1,24 @@
+div{
+    margin: 30px;
+    height: 300px;
+    border: 2px solid brown;
+}
+
+button {  
+    padding: 5px 15px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+input{
+    margin:10px;
+
+}
+h5{
+    text-align: center;
+    color:green;
+}

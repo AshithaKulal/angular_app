@@ -1,0 +1,11 @@
+<!--Parent-->
+<div>
+    <h5>Your Wishlist</h5>
+    <input type="text" #itemname placeholder="Enter item name" ><br>
+          <!--EVENT BINDING-->
+          <button class="btn btn-outline-success" type="submit" (click)="Add_item(itemname.value)">Add to Cart</button>
+          <br>
+    <app-item [item]="newItem"></app-item>
+    
+</div>
+<app-feedback></app-feedback> 

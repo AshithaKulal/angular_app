@@ -1,0 +1,38 @@
+input {
+    width: 60%;
+    margin-left: 50px;
+}
+
+label {
+    color:red;
+    margin-left: 50px;
+}
+h4{
+    margin-left: 600px;
+
+}
+
+form {
+    padding: 20px;
+    margin-left: 150px;
+    width: 60%;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: black;
+}
+
+/* form:hover {
+    color: rgb(174, 155, 11);
+    background-color: darkgray;
+    transform:scale(1.1);
+
+} */
+
+button {
+    margin-left: 120px;
+}
+
+span {
+    width: 60%;
+    margin-left: 100px;
+}

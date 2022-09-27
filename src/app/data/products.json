@@ -1,0 +1,59 @@
+[
+    {
+    "pid":"001",
+    "image":"assets/laptop.jfif",
+    "pname":"Laptop",
+    "pdescription":"16 GB RAM, 12th Generation, i7 processor, Operating system: Windows 11",
+    "Status":"In Stock",
+    "price":70000
+    },
+   
+    {
+      "pid":"004",
+      "image":"assets/watch.jfif",
+      "pname":"Watch",
+      "pdescription":"Bleed Blue, Day and Date Functioning Strap Adult Quartz Watch  ",
+      "Status":"In Stock",
+      "price":2000
+    },
+    {
+        "pid":"005",
+        "image":"assets/toy.jfif",
+        "pname":"Toy",
+        "pdescription":"Kids creation Play Set Non Toxic Plastic Unbreakable Toys",
+        "Status":"Out of Stock",
+        "price":700
+    },
+    {
+      "pid":"006",
+      "image":"assets/earrings.jfif",
+      "pname":"Earring",
+      "pdescription":"Colour: Silver Oxidiz, Material German: Silver Closure",
+      "Status":"In Stock",
+      "price":200
+    },
+    {
+      "pid":"007",
+      "image":"assets/headphone.jfif",
+      "pname":"Headphone",
+       "pdescription":"Over Ear Active Noise Cancellation Headphones with Mic",
+       "Status":"In Stock",
+       "price":2000
+    },
+    {
+      "pid":"008",
+      "image":"assets/powerbank.jfif",
+      "pname":"Powerbank",
+      "pdescription":"3i 20000mAh Lithium Polymer 18W Fast PD Charging, Input- Type C",
+      "Status":"Out of Stock",
+      "price":500
+    },
+    {
+      "pid":"009",
+      "image":"assets/footwear.jfif",
+      "pname":"Footwear",
+      "pdescription":"Women Copper Flats Sandal, Durable stiching, outer material : synthetic",
+      "Status":"Out of Stock",
+      "price":1000
+    }
+  ]

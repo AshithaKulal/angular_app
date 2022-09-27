@@ -1,0 +1,48 @@
+<marquee>Super Sale 30% Off</marquee>
+<div >
+    <div class="row">
+        <!--1st column-->
+        <div class="col col-md-3">
+            <app-card [product]="productItem" *ngFor="let productItem of p"></app-card>
+        </div>
+
+        <!--2nd column-->
+
+            <div class="card  col-md-6" style="border:none;margin-top: 10px; ">
+                <div class="card-body col-md-12" style="margin-bottom: 10px;">
+                    <div class="row" style="margin-top:10px;border-style:solid;border-radius:15px;background-color: rgb(163, 153, 127);"
+                        *ngFor="let appl of appliances">
+                        <div class="col col-md-3">
+                            <!--Property Binding-->
+                            <img [src]="appl.img">
+                        </div>
+                        <div class="col col-md-9" style="margin-top:10px; ">
+                            <div style="margin-left: 10px;">
+                              <span style="color: darkmagenta;"> <b>{{ appl.pname | uppercase}}</b></span>
+                            <hr>
+                                {{appl.pdescription}}
+                                <br>
+                                <span style="color: chocolate;">Price: <b>{{ appl.price | currency:'INR'}}</b></span>
+                                <!-- <br> -->
+                                <div class="row">
+                                    <div class="col col-md-4">
+                                        <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
+                                    </div>   
+                                    <div class="col col-md-4">
+                                        <button class="btn btn-success m-2" (click)="addToCart(appl)" style="width:120px;border-radius:10px;">Add to Cart</button> 
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+        <!--3rd column-->
+        <div class="col col-md-3">
+           <app-advertisement></app-advertisement>
+        </div>
+    </div>
+</div>

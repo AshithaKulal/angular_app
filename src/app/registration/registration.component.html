@@ -1,0 +1,55 @@
+<div class="mt-2">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+        <div class="login-form">
+            <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup</h2>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" formControlName="username"
+                        placeholder="Enter Username">
+                    <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['required']">Name is required
+                    </label>
+                    <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['minlength']">Name
+                        must be at least 5 characters</label>
+                        <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['pattern']">Alphabets only</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="useremail" formControlName="useremail"
+                        placeholder="Enter email">
+                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
+                        </label>
+                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must
+                        be a valid email address</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" formControlName="password"
+                        placeholder="Enter password">
+                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is
+                        required</label>
+                       
+                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password
+                        must be at least 6 characters</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="mobile" formControlName="mobile"
+                        placeholder="Enter Mobile number">
+                    <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['required']">Mobile number
+                        is required</label>
+                        <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['pattern']">Enter Valid Number</label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-warning">Register</button>
+                <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+                    <span class="ms-fs-12 ng-binding">Already have an account?
+                        <a class="secondary ng-binding" href="login">
+                            Login!
+                        </a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

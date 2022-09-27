@@ -1,0 +1,28 @@
+<div class="container">   
+    <div class="row" >
+      <div class="col col-4 col-sm-6 col-md-3 mt-1" *ngFor="let c of contact">
+      
+        <div class="card mb-3" style="width: 18rem; border: 1.75px solid darkblue; 
+        border-radius: 10px; background-color:bisque ;">
+          <div class="row g-0">
+            <div class="col-md-5" >
+               <div style="margin: 5px;">
+                <h5 style="text-align: center;margin-top:10px; color:darkgreen">
+                  <i class="fa-solid fa-location-dot"style="font-size:15px;"></i> {{c.location}}</h5>
+              <span class="address">{{c.address}}</span>
+            </div> 
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                
+                <span><i class="fa-sharp fa-solid fa-phone-volume" style="color:brown;"></i> {{c.mbl}}</span><br>  
+                <span><i class="fa-brands fa-square-instagram"style="color:brown;"></i> {{c.insta}}</span><br>
+                <span><i class="fa-solid fa-envelope"style="color:brown;"></i> {{c.email}}</span><br>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+[
+    {
+    "pid":"001",
+    "image":"assets/laptop.jfif",
+    "pname":"Laptop"
+    },
+   
+    {
+      "pid":"004",
+      "image":"assets/watch.jfif",
+      "pname":"Watch"
+    },
+    {
+        "pid": 3,
+        "pname": "Fans",
+        "image": "https://rukminim1.flixcart.com/image/832/832/ku79vgw0/fan/e/l/e/studio-ceiling-fan-atomberg-original-imag7dqqwzjjsrvf.jpeg?q=70"
+      },
+      {
+        "pid": 4,
+        "pname": "Mixer",   
+        "image": "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/mixer-grinder-juicer/q/q/j/-original-imagfggwknqjxsyx.jpeg?q=70"
+      },
+     
+    {
+        "pid":"005",
+        "image":"assets/toy.jfif",
+        "pname":"Toy"
+    },
+   
+    {
+        "pid": 1,
+        "pname": "Telivision",
+        "image": "https://rukminim1.flixcart.com/image/832/832/kqqykcw0/television/1/f/n/kd-65x80j-sony-original-imag4p2wxahgfgmf.jpeg?q=70"
+      },
+      {
+        "pid": 2,
+        "pname": "Air Conditioner",
+       "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/air-conditioner-new/e/l/b/-original-imaggf36gs6p98gf.jpeg?q=70"
+      },
+   
+     
+    {
+      "pid":"007",
+      "image":"assets/headphone.jfif",
+      "pname":"Headphone"
+      
+    },
+    {
+      "pid":"008",
+      "image":"assets/powerbank.jfif",
+      "pname":"Powerbank"
+     
+    },
+    {
+      "pid":"009",
+      "image":"assets/footwear.jfif",
+      "pname":"Footwear"
+    },
+    {
+        "pid": 5,
+        "pname": "Waching Machine",
+        "image": "https://rukminim1.flixcart.com/image/832/832/kg6vfrk0/washing-machine-new/n/b/z/ww60r20glss-tl-samsung-original-imafwgrdhsn6hhpe.jpeg?q=70"
+      },
+      {
+        "pid": 6,
+        "pname": "Oven Toaster",
+        "image": "https://rukminim1.flixcart.com/image/832/832/kxdl3m80/otg-new/8/h/a/2000-steel-wonderchef-48-original-imag9un5ztegxzrf.jpeg?q=70"
+      }
+  
+  ]
