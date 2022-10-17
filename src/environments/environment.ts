@@ -8,7 +8,8 @@ export const environment = {
   // cartapi:"http://localhost:3000/cart"
  
   postsapi:"https://heroku-json-server-flipkart.herokuapp.com/posts",
-  userapi:"https://heroku-json-server-flipkart.herokuapp.com/users",
+  // userapi:"https://heroku-json-server-flipkart.herokuapp.com/users",
+  userapi:"https://localhost:7148/api/Registrations",
   cartapi:"https://heroku-json-server-flipkart.herokuapp.com/cart",
   commentapi:"https://heroku-json-server-flipkart.herokuapp.com/comments"
 
